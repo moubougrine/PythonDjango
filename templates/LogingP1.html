@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'Css/style.css'%}">
+    </head>
+    <body class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="{% static 'image/bg.mp4'%}"type="video/mp4">
+        </video>
+        <div >
+            <nav>
+                <div class="nav" >
+                    <a href="{% url 'section' 'home'%}" class="textt"><h2 class="header">Home</h2></a>
+                    <a href="{% url 'section' 'experience'%}" class="textt"><h2 class="header">Experience</h2></a>
+                    <a href="{% url 'section' 'skills'%}" class="textt"><h2 class="header">Skills</h2></a>
+                    <a href="{% url 'section' 'contact'%}" class="textt"><h2 class="header">Contact</h2></a>
+                </div>
+            </nav>
+            {% if section == "home" %}            <div >
+                
+                <br>  
+                <br>
+                <div class="stih">
+                    <div class="nav1">
+                        <div>
+                            <br>
+                            <img src="{%static 'image/MYPHOTO.jpg'%}" width="250" class="imge">
+                            <br>
+                            <h1 class="h11" data-text="&nbsp;ABDELMOUGHIT &nbsp;">&nbsp;ABDELMOUGHIT &nbsp;</h1>
+                            <div class="Mimage">
+                                <a href="http://github.com/moubougrine" target="_blank">
+                                   <img src="{%static 'image/github.png'%}"  width="50"> 
+                                </a>
+                                <a href=" http://www.linkedin.com/in/abdelmoughit-bougrine-282027250" target="_blank">
+                                    <img src="{%static 'image/linkedine.png'%}" width="50">
+                                </a>
+                                <a href="mailto:moughitbougrine@gmail.com" target="_blank">
+                                    <img src="{%static 'image/email.png'%}" width="40">
+                                </a>
+                            </div>
+                        </div>
+                    <div>
+                        <div>
+                            <br>
+                            <h1 class="textp header">♠Portfolio</h1>
+                            <p>
+                            <span class="textp header"><b>🗡Professional Summary</b></span><br>
+                            <span class="textt">Young, dynamic, ambitious, and motivated,<br>
+                            with an initiative-driven mindset and a strong ability to learn. <br>
+                            Skilled in communication, organization, and creative problem-solving.</span>
+                            </p>
+                            <span class="textp header"><b>🗡CERTIFICATS</b> </span><br>
+                            <span>
+                                ⚫ Data Analysis with Python                                   (coursera) <br>
+                                ⚫ Foundations of Project Management                           (coursera) <br>
+                                ⚫ Databases and SQL for Data Science with Python              (coursera)
+                            </span>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+                
+            </div>
+            <div class="stih">
+                <div class="a">
+                    <h3 class="textt header">Proficiency in Office Software </h3>
+                    <h2>Advanced use of Microsoft Excel, Word, PowerPoint, Power BI, and Access for analysis, reporting, and task automation.</h2>
+                </div>
+                <div class="a">
+                    <h3 class="textt header">Web Development with Django, HTML5, and CSS3 </h3>
+                    <h2>
+                        Creation of dynamic applications, responsive designs, and management of static files.
+                    </h2>
+                </div>
+                <div class="a">
+                    <h3 class="textt header">Application Development</h3>
+                        <h3>Proficient in Python (with various libraries such as Tkinter, CustomTkinter, OpenCV, Pandas, NumPy) and Go (Golang) for developing interactive applications, analytical tools, and robust software solutions.</h3>
+                </div>
+                <div class="a">
+                    <h3 class="textt header">Data Analysis</h3>
+                        <h4>Proficient in Python (with various libraries such as Tkinter, CustomTkinter, OpenCV, Pandas, NumPy) and Go (Golang) for developing interactive applications, analytical tools, and robust software solutions.
+                            <br>Expertise in SQL, SQLite, DB2, and VBA for data management and manipulation
+                        </h4>
+                </div>
+                <div class="a">
+                    <h3 class="textt header">Project Management</h3>
+                        <h2>Strong project management skills, ensuring projects are delivered on time and meet stakeholder requirements.</h2>
+                </div>
+            </div>
+            <div class="bodyy">
+                <div><h1 class="header">Compétences Clés</h1></div>
+                <div class="stih1">
+                    <div class="a1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p class="textp"><b>Gestion d'équipes</b></p>
+                                <img src="{% static 'image/R.png'%}" width="250"> 
+                            </div>
+                            <div class="card-back">
+                                    <h1 class="textp">  Gestion d'équipes<br> Encadrement, planification et coordination des tâches.                                    </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p class="textp"><b>Commerce et marketing</b></p>
+                                <img src="{% static 'image/p.png'%}" width="250"> 
+                            </div>
+                            <div class="card-back">
+                                    <h1 class="textp"> Commerce et marketing  <br> Stratégies commerciales et gestion des relations clients.                                    </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p class="textp"><b>Contrôle qualité</b></p>
+                                <img src="{% static 'image/ss.png'%}" width="250"> 
+                            </div>
+                            <div class="card-back">
+                                    <h1 class="textp"> 
+                                        Contrôle qualité  <br> Expertise en inspection et amélioration de la qualité des produits.
+                                    </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p class="textp"><b>Conduite de chariots élévateurs </b></p>
+                                <img src="{% static 'image/photoPp1.png'%}" width="250"> 
+                            </div>
+                            <div class="card-back">
+                                    <h1 class="textp"> Conduite de chariots élévateurs  <br>Maîtrise de la conduite sécurisée des chariots élévateurs pour le transport et le stockage des marchandises.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stih">
+                <div class="bodyy1 stih">
+                    <div>
+                        <P class="hlite" >Professional experience</P>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                          <p><pre class="textt">Print Group                                                                                        November 2022- May 2024</pre></p>  
+                            <h4><b class="textt">Team Leader: </b><br>
+                                Task management and group organization, Check the fabric quality and sort it according to quality,<br>
+                                 printing, and dyeing errors, Provide resources and manage the store, Good experience in fabric types knowledge,<br>
+                                  Work with product and order management software.
+                            </h4>
+                            <br>
+                          <p><pre class="textt">Youssef Fes Commerce                                                                    June 2022- November 2022</pre></p>  
+                            <h4><b class="textt">Accountant :</b><br>
+                                Preparation of financial statements, assistance to clients and suppliers.
+                                <br>
+                                <br>
+                                <b class="textt">Marketer and Product Controller :</b><br>
+                                Development of marketing strategies, product evaluation, quality control, <br>
+                                 coordination with sales and production teams.
+                            </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+            {% elif section == "experience"%}
+            <div class="bodyy1 stih">
+                <div>
+                    <P class="hlite" >Professional experience</P>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                      <p><pre class="textt">Print Group                                                                                        November 2022- May 2024</pre></p>  
+                        <h4><b class="textt">Team Leader: </b><br>
+                            Task management and group organization, Check the fabric quality and sort it according to quality,<br>
+                             printing, and dyeing errors, Provide resources and manage the store, Good experience in fabric types knowledge,<br>
+                              Work with product and order management software.
+                        </h4>
+                        <br>
+                      <p><pre class="textt">Youssef Fes Commerce                                                                    June 2022- November 2022</pre></p>  
+                        <h4><b class="textt">Accountant :</b><br>
+                            Preparation of financial statements, assistance to clients and suppliers.
+                            <br>
+                            <br>
+                            <b class="textt">Marketer and Product Controller :</b><br>
+                            Development of marketing strategies, product evaluation, quality control, <br>
+                             coordination with sales and production teams.
+                        </h4>
+                </div>
+            </div>
+            {% elif section == "skills"%}
+            <div class="stih">
+                <div class="a">
+                    <h3 class="textt header">Proficiency in Office Software </h3>
+                    <h2>Advanced use of Microsoft Excel, Word, PowerPoint, Power BI, and Access for analysis, reporting, and task automation.</h2>
+                </div>
+                <div class="a">
+                    <h3 class="textt header">Web Development with Django, HTML5, and CSS3 </h3>
+                    <h2>
+                        Creation of dynamic applications, responsive designs, and management of static files.
+                    </h2>
+                </div>
+                <div class="a">
+                    <h3 class="textt header">Application Development</h3>
+                        <h3>Proficient in Python (with various libraries such as Tkinter, CustomTkinter, OpenCV, Pandas, NumPy) and Go (Golang) for developing interactive applications, analytical tools, and robust software solutions.</h3>
+                </div>
+                <div class="a">
+                    <h3 class="textt header">Data Analysis</h3>
+                        <h4>Proficient in Python (with various libraries such as Tkinter, CustomTkinter, OpenCV, Pandas, NumPy) and Go (Golang) for developing interactive applications, analytical tools, and robust software solutions.
+                            <br>Expertise in SQL, SQLite, DB2, and VBA for data management and manipulation
+                        </h4>
+                </div>
+                <div class="a">
+                    <h3 class="textt header">Project Management</h3>
+                        <h2>Strong project management skills, ensuring projects are delivered on time and meet stakeholder requirements.</h2>
+                </div>
+            </div>
+            <div class="bodyy">
+                <div><h1 class="header">Compétences Clés</h1></div>
+                <div class="stih1">
+                    <div class="a1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p class="textp"><b>Gestion d'équipes</b></p>
+                                <img src="{% static 'image/R.png'%}" width="250"> 
+                            </div>
+                            <div class="card-back">
+                                    <h1 class="textp"> Gestion d'équipes  <br> Encadrement, planification et coordination des tâches.                                    </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p class="textp"><b>Commerce\marketing</b></p>
+                                <img src="{% static 'image/p.png'%}" width="250"> 
+                            </div>
+                            <div class="card-back">
+                                    <h1 class="textp"> Commerce et marketing  <br> Stratégies commerciales et gestion des relations clients.                                    </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p class="textp"><b>Contrôle qualité</b></p>
+                                <img src="{% static 'image/ss.png'%}" width="250"> 
+                            </div>
+                            <div class="card-back">
+                                    <h1 class="textp"> 
+                                        Contrôle qualité  <br> Expertise en inspection et amélioration de la qualité des produits.
+                                    </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p class="textp"><b>Conduite de chariots élévateurs </b></p>
+                                <img src="{% static 'image/photoPp1.png'%}" width="250"> 
+                            </div>
+                            <div class="card-back">
+                                    <h1 class="textp"> Conduite de chariots élévateurs  <br>Maîtrise de la conduite sécurisée des chariots élévateurs pour le transport et le stockage des marchandises.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% elif section == "contact"%}
+                <div class="bodyy">
+                    <h1 class="header">Contact</h1>
+                    <br>
+                        <form method="post">
+                            {% csrf_token %}
+                            <div >
+                                <div>
+                                    <div class="inla">
+                                        <input class="input" type="text" name="name" required>
+                                        <label class="texl">Yourname</label>
+                                    </div>
+                                    <div class="inla">
+                                        <input class="input" type="text" name="email" required>
+                                        <label class="texl">Email</label>
+                                    </div>
+    
+                                    <div class="inla">
+                                        <input class="input" type="text" name="subject" required>
+                                        <label class="texl">Subject</label>
+                                    </div>
+                                </div>
+                                    <div>
+                                        <br>
+                                        <textarea class="input textarea" type="text" name="text" required>.</textarea>
+                                        
+                                        <label class="texl">Message</label>
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </div>
+                            </div>
+                            <br>
+                            <br>
+
+                            <input class="bottun" type="submit" value="Send">
+                        </form>
+                </div>
+            {%endif%}
+    </body>
+</html>
